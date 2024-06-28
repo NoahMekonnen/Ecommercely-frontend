@@ -109,7 +109,7 @@ function App() {
   const [profileErrorMessages, setProfileErrorMessages] = useState(INITIAL_PROFILE_ERROR_STATE);
 
   const [showRedirectPage, setShowRedirectPage] = useState(JSON.parse(localStorage.getItem('showRedirectPage')) || INITIAL_REDIRECT_STATUS);
-
+  console.log(showRedirectPage,"showredirecrpage")
   useEffect(() => {
     // set properties for body
     const body = document.querySelector('body');
@@ -467,7 +467,6 @@ function App() {
       ...data,
       show: 'true'
     }))
-
   }
 
   const handleProfileFormChange = (e) => {

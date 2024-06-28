@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import './SuccessPage.css';
 
 const SuccessPage = ({ setShowRedirectPage }) => {
+    console.log("on success")
     useEffect(() => {
         setShowRedirectPage((data) => {
             console.log(data, "show redirect data")
