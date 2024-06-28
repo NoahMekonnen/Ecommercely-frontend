@@ -602,22 +602,17 @@ function App() {
                 cartItems={cartItems}
               />}
             />
-            {showRedirectPage.show == 'true' &&
-              <>
-                {showRedirectPage.success == 'true' &&
+            
                   <Route path='/success'
                     element={<SuccessPage
                       setShowRedirectPage={setShowRedirectPage} />}
                   />
-                }
-                {showRedirectPage.cancel == 'true' &&
+                
                   <Route path='/cancel'
                     element={<CancelPage
                       setShowRedirectPage={setShowRedirectPage} />}
                   />
-                }
-              </>
-            }
+                
             {
               user.username &&
               <>
