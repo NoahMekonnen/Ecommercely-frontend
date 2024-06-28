@@ -1,6 +1,47 @@
-# Getting Started with Create React App
+# Ecommercely-frontend(Note that the application is called Ecommercely)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a basic ecommerce site which allows users to buy and/or sell items and see their past transactions.
+Live at: https://ecommerce-store-frontend-ced2.onrender.com/
+
+![Ecommerce Picture](c:\Users\noahm\OneDrive\Pictures\Screenshots\Screenshot 2024-06-28 152819.png)
+
+### App features include:
+
+* A user upon registering can make a customer or seller account
+* A customer can buy any available product and see his past orders. He can also update his profile information on the profile page.
+* A seller can do the same as a customer but in addition the seller can make products. The seller can also view some basic information about 
+his transactions with customers and approve any incoming orders in his dashboard
+* Any user whether logged in or not can search for products in the nav search bar by the name of the product or the category that was assigned to that product. This user can also view the detail page of any product to get more information on it.
+
+### Standard User flow
+
+#### For a Customer:
+
+1. A customer registers as a customer or logs into a customer account made previously.
+2. He then filters products based on category/product name and adds items to his cart using the add to cart button.
+3. He then clicks on one of the products to view more information on the product and upon review adds the item to the cart.
+4. He then clicks on the cart button in the Navbar and clicks the proceed to checkout button.
+5. He then is directed to the checkout page where he types in an address and clicks the proceed to pay button.
+6. He is then taken to the stripe checkout page where his payment information is verified.
+7. Upon success He will be taken to a success page.
+
+#### For a Seller:
+
+1. A seller registers as a seller or logs into a seller account made previously.
+2. He then clicks the make product link in the Navbar and inputs some information for a product he wants to post.
+3. Upon completion he is redirected to his dashboard.
+4. If a customer buys a product he can approve the product and the transaction will have be officially completed.
+5. The seller can also view all his posted products through the dashboard page.
+
+
+### API ENDPOINT
+
+https://ecommerce-store-backend-7m44.onrender.com
+
+### Tech Stack
+* React.js
+* Bootstrap
+* (Node.js for backend)
 
 ## Available Scripts
 
@@ -16,55 +57,5 @@ You may also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
