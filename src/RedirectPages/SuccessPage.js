@@ -3,10 +3,13 @@ import './SuccessPage.css';
 
 const SuccessPage = ({ setShowRedirectPage }) => {
     useEffect(() => {
-        setShowRedirectPage((data) => ({
+        setShowRedirectPage((data) => {
+            console.log(data, "show redirect data")
+            return ({
             ...data,
             cancel: 'false'
-        }), [])
+        })
+    }, [])
     },[])
 
     return (
