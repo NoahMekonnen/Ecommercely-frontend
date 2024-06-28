@@ -21,7 +21,7 @@ const NavBar = ({ searchFilter, handleChange, handleSearch, user, setShowCart, s
       style={navStyle}>
       <Container fluid>
         <Navbar.Brand href="/">
-          {user.username ? `Welcome ${user.username}` : 'Home'}
+          {user.username ? `Welcome ${user.username}` : 'Ecommercely'}
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">

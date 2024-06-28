@@ -43,6 +43,10 @@ https://ecommerce-store-backend-7m44.onrender.com
 * Bootstrap
 * (Node.js for backend)
 
+### Important Notes
+
+* Database is populated with fake user and product data from mockaroo.com
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -58,4 +62,3 @@ You may also see any lint errors in the console.
 ### `npm test`
 
 ### `npm run build`
-
