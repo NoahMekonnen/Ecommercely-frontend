@@ -1,0 +1,16 @@
+.Dashboard{
+   display: flex;
+}
+
+.Dashboard-Child{
+    border: 3px solid black;
+    width: 200px;
+    height: 200px;
+    background-color: #D9B08C;
+    margin: 3%;
+    text-align: center;
+}
+
+.Dashboard-Num{
+    color: white;
+}

@@ -1,0 +1,30 @@
+.SellerOrderListCard{
+    position: relative;
+    width: 260px;
+    height: 410px;
+    background-color: #964734;
+    color: #D1E8E2;
+    text-decoration: none;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+}
+
+.SellerOrderListCard-Img-Container{
+    display: flex;
+    justify-content: center;
+    background-color: #0FA4AF;
+}
+
+.SellerOrderListCard-Img{
+    height: 150px;
+    object-fit: contain;
+}
+
+.SellerOrderListCard-Button{
+    position: absolute;
+    width: 60%;
+    right: 20%;
+    bottom: 40px;
+}

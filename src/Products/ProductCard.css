@@ -1,0 +1,77 @@
+.ProductCard{
+    position: relative;
+    width: 260px;
+    height: 410px;
+    background-color: #964734;
+    color: #D1E8E2;
+    text-decoration: none;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+}
+
+.ProductCard:hover{
+    background-color: #D9B08C;
+}
+
+.ProductCard-Img-Container{
+    display: flex;
+    justify-content: center;
+    background-color: #D1E8E2;
+}
+
+.ProductCard-Img{
+    height: 150px;
+    object-fit: contain;
+}
+
+.ProductCard-Info{
+    font-size: .75em;
+}
+
+.ProductCard-CartButton{
+    background-color: #3498db;
+    position: absolute;
+    bottom: 40px;
+    right: 20%;
+    height: 34px;
+    width: 60%;
+    border-radius: 6px;
+    border: 0px;
+    color: #D1E8E2;
+}
+
+.ProductCard-CartButton:hover{
+    background-color: #2980b9;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+img{
+    width: 200px;
+    height: 100px;
+}
+
+.ProductCard-Discount{
+    position: relative;
+    left: 15px;
+}
+
+.ProductCard-OldPrice{
+    text-decoration: line-through;
+}
+
+.ProductCard-DiscountedPrice{
+    font-size: 1.75em;
+    color: black;
+    display: inline-block;
+    padding: 2px;
+}
+
+.ProductCard .ProductCard-Stars{
+    color: #D1E8E2;
+}

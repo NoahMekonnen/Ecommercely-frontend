@@ -1,0 +1,29 @@
+.SignUpPage{
+    display: flex;
+    justify-content: center;
+}
+
+.SignUpPage-Form-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    height: 300px;
+    width: 450px;
+    background-color: #024950;
+    position: relative;
+    bottom: -80px;
+}
+
+.SignUpPage-Form{
+    width: 400px;
+}
+
+.SignUpPage-Form-Button{
+    position: relative;
+    bottom: -10px;
+}
+
+.SignUpPage-label{
+    color: #0FA4AF;
+}

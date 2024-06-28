@@ -1,0 +1,30 @@
+.AddProduct{
+    display: flex;
+    justify-content: center;
+}
+
+.AddProduct-Form-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 530px;
+    border-radius: 6px;
+    background-color: #024950;
+    position: relative;
+    bottom: -80px;
+}
+
+.AddProduct-Form{
+    width: 400px;
+
+}
+
+.AddProduct-Form-Button{
+    position: relative;
+    bottom: -10px;
+}
+
+.AddProduct-label{
+    color: #0FA4AF;
+}

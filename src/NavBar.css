@@ -1,0 +1,80 @@
+.Nav {
+    position: relative;
+    height: 10vh;
+    max-width: 100%;
+}
+
+.Nav-Form {
+    margin-right: 40%;
+}
+
+.Nav .Nav-SearchBar {
+    width: 23vw;
+
+}
+
+.Nav .Nav-CartIcon-Button {
+    position: absolute;
+    right: 80px;
+    width: 60px;
+    height: 50px;
+}
+
+.Nav .Nav-Add:hover {
+    color: #D9B08C;
+}
+
+@media(max-width: 1400px) {
+    .Nav {
+        height: 18vh;
+    }
+}
+
+@media(max-width: 1200px) {
+    .Nav {
+        height: 20vh;
+    }
+
+    .Nav-CartIcon-Button {
+        bottom: 5px;
+    }
+
+    .Nav .Nav-Add {
+        bottom: 10px;
+    }
+}
+
+@media(max-width:991px) {
+    .Nav {
+        height: 38vh;
+    }
+
+    .Nav .Nav-CartIcon-Button {
+        right: 130px;
+        bottom: 10px;
+    }
+
+}
+
+@media(max-width:800px) {
+    .Nav {
+        height: 48vh;
+    }
+}
+
+@media(max-width:400px) {
+    .Nav{
+        height: 50vh;
+    }
+}
+
+.Nav .Nav-Add {
+    position: absolute;
+    right: 200px;
+    top: 25px;
+    color: aliceblue;
+}
+
+.Nav .Nav-Link:hover {
+    background-color: gray;
+}

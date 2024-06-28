@@ -1,0 +1,23 @@
+.CheckoutCartItemCard{
+    padding: 5px;
+    border: 1px black solid;
+    height: 120px;
+    width: 100%;
+    display: flex;
+    color: #D1E8E2;
+}
+
+.CheckoutCartItemCard-Img{
+    object-fit: contain;
+    background-color: #D1E8E2;
+    height: 100%;
+}
+
+.CheckoutCartItemCard-Detail{
+    position: relative;
+    left: 10px;
+}
+
+.test{
+    display: inline;
+}

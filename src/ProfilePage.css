@@ -1,0 +1,35 @@
+.ProfilePage{
+    display: flex;
+    justify-content: center;
+}
+
+.ProfilePage-Form-Container{
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 360px;
+    background-color: #024950;
+    border-radius: 6px;
+    position: relative;
+    bottom: -80px;
+}
+
+.ProfilePage-Form{
+    width: 400px;
+    margin: 0 auto;
+}
+
+.ProfilePage-Form-Button{
+    position: relative;
+    bottom: -10px;
+}
+
+.ProfilePage-label{
+    color: #0FA4AF;
+}
+
+.ProfilePage-Form-Delete{
+    position: absolute;
+    bottom: 27px;
+    right: 25px;
+}

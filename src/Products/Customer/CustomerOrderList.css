@@ -1,0 +1,10 @@
+.CustomerOrderList{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+    gap: 20px;
+}
+
+.CustomerOrderList-None{
+    color: #D9B08C;
+}

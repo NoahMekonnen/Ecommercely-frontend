@@ -1,0 +1,29 @@
+.LoginPage{
+    display: flex;
+    justify-content: center;
+}
+
+.LoginPage-Form-Container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    position: relative;
+    bottom: -80px;
+    background-color: #024950;
+    height: 250px;
+    width: 450px;
+}
+
+.LoginPage-Form{
+    width: 400px;
+}
+
+.LoginPage-Form-Button{
+    position: relative;
+    bottom: -10px;
+}
+
+.LoginPage-label{
+    color: #0FA4AF;
+}

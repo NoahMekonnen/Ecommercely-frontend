@@ -1,0 +1,36 @@
+.QuantityAdjuster{
+    display: inline;
+    height: 12px;
+}
+
+.QuantityAdjuster-Input{
+    display: inline-block;
+    width: 25px;
+    text-align: center;
+}
+
+.QuantityAdjuster-Increase-Button{
+    background-color: #2ecc71;
+    border: 0px;
+    height: 30px;
+    color: white;
+    box-sizing: border-box;
+    width: 25px;
+}
+
+.QuantityAdjuster-Increase-Button:hover{
+    background-color: #27ae60;
+}
+
+.QuantityAdjuster-Decrease-Button{
+    background-color: #2ecc71;
+    border: 0px;
+    height: 30px;
+    color: white;
+    box-sizing: border-box;
+    width: 25px;
+}
+
+.QuantityAdjuster-Decrease-Button:hover{
+    background-color: #27ae60;
+}

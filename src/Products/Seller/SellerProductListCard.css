@@ -1,0 +1,23 @@
+.SellerProductListCard{
+    position: relative;
+    width: 260px;
+    height: 300px;
+    background-color: #964734;
+    color: #D1E8E2;
+    text-decoration: none;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 10px;
+    text-align: center;
+}
+
+.SellerProductListCard-Img-Container{
+    display: flex;
+    justify-content: center;
+    background-color: #0FA4AF;
+}
+
+.SellerProductListCard-Img {
+    height: 150px;
+    object-fit: contain;
+}

@@ -1,0 +1,37 @@
+.CheckoutPage{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 70px;
+    color: #964734;
+}
+
+
+.CheckoutPage-Content-Container{
+    width: 600px;
+    background-color: #964734;
+    border-radius: 0px 0px 10px 10px;
+    overflow: hidden;
+}
+
+.CheckoutPage-Form-Container{
+    display: flex;
+    justify-content: center;
+    background-color: #024950;
+    height: 170px;
+}
+
+.CheckoutPage-Form{
+    position: relative;
+    bottom: -20px;
+    width: 400px;
+}
+
+.CheckoutPage-Form-Button{
+    position: absolute;
+    bottom: 45px;
+}
+
+.CheckoutPage-label{
+    color: #0FA4AF;
+}
