@@ -30,7 +30,6 @@ import ProfilePage from './ProfilePage';
 
 
 function App() {
-  // console.log(showRedirectPage,)
   const navigate = useNavigate();
   const location = useLocation();
   const INITIAL_LOGIN_FORM_DATA = {
@@ -110,7 +109,7 @@ function App() {
   const [profileErrorMessages, setProfileErrorMessages] = useState(INITIAL_PROFILE_ERROR_STATE);
 
   const [showRedirectPage, setShowRedirectPage] = useState(JSON.parse(localStorage.getItem('showRedirectPage')) || INITIAL_REDIRECT_STATUS);
-
+  console.log(showRedirectPage," show in app")
   useEffect(() => {
     // set properties for body
     const body = document.querySelector('body');

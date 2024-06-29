@@ -1,10 +1,10 @@
 import './CancelPage.css';
 
 const CancelPage = ({setShowRedirectPage}) =>{
-    // setShowRedirectPage((data) => ({
-    //     ...data,
-    //     success: 'false'
-    // }),[])
+    setShowRedirectPage((data) => ({
+        ...data,
+        success: 'false'
+    }),[])
  
     return(
         <div className="CancelPage">
