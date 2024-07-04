@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route, Navigate, useNavigate, useLocation } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import NavBar from './NavBar';
 
@@ -30,13 +30,12 @@ import ProfilePage from './ProfilePage';
 
 
 function App() {
-  // console.log(showRedirectPage,)
-  const navigate = useNavigate();
-  const location = useLocation();
+  
   const INITIAL_LOGIN_FORM_DATA = {
     username: '',
     password: ''
   }
+
   const INITIAL_SIGNUP_FORM_DATA = {
     username: '',
     password: '',
@@ -211,7 +210,6 @@ function App() {
 
   const handleProceedToCheckout = async (e) => {
     e.preventDefault();
-    navigate('/checkout')
   }
 
   const handleSearchChange = (e) => {
@@ -221,9 +219,6 @@ function App() {
   const handleSearch = async (e) => {
     e.preventDefault();
 
-    if (location.pathname != '/') {
-      navigate('/')
-    }
     const userProducts = await EcommerceApi.getFilteredProducts({ str: searchFilter, category: searchFilter })
     setProducts(() => userProducts);
     setNumOfProducts(() => 12)
@@ -249,8 +244,7 @@ function App() {
     try {
       const token = await EcommerceApi.authenticate(loginFormData);
       if (token) {
-        setUser(() => decodeToken(token));
-        navigate('/');
+        setUser(() => decodeToken(token))
         setLoginFormData(INITIAL_LOGIN_FORM_DATA);
       }
     } catch (err) {
@@ -287,9 +281,10 @@ function App() {
     e.preventDefault()
     try {
       const token = await EcommerceApi.register(signUpFormData);
+      console.log(token,"token")
       if (token) {
+        console.log("in signup submit")
         setUser(() => decodeToken(token));
-        navigate('/');
         setSignUpFormData(INITIAL_SIGNUP_FORM_DATA);
       }
     } catch (err) {
@@ -363,7 +358,6 @@ function App() {
       const product = await EcommerceApi.createProduct(finalProductFormData, user.id);
       setMyProducts(items => [...items, product]);
       setProductFormData(INITIAL_PRODUCT_FORM_DATA);
-      navigate('/dashboard');
     } catch (err) {
       // store error msg in state so that appropiate message and display may be shown
       const msg = err.response.data.error.msg
@@ -603,6 +597,8 @@ function App() {
                 cartItems={cartItems}
               />}
             />
+            {/*These 2 routes are the success and cancel pages that a user will see upon successfully completing a transaction
+            or failing to complete a transaction.*/}
             {showRedirectPage.show == 'true' &&
               <>
                 {showRedirectPage.success == 'true' &&

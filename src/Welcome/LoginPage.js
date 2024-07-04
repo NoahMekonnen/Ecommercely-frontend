@@ -1,14 +1,22 @@
 import { Navigate } from "react-router-dom";
 import './LoginPage.css'
+import { useNavigate } from "react-router-dom";
 
 const LoginPage = ({ data, handleChange, handleSubmit, user, errorMessages }) => {
 
     const { username, password } = data;
-
+    const navigate = useNavigate();
+    
     return (
         <div className="LoginPage">
             <div className="LoginPage-Form-Container">
-                <form onSubmit={handleSubmit}
+                <form onSubmit={(e) => {
+                    handleSubmit(e)
+                    if(user.username){
+                        navigate('/');
+                    }
+                }
+            }
                     className="LoginPage-Form">
                     <label htmlFor="username"
                         className='LoginPage-label'>

@@ -3,14 +3,21 @@ import './Cart.css';
 import CartContext from './CartContext';
 import { useContext } from 'react';
 import { v4 as uuid } from 'uuid';
+import { useNavigate } from 'react-router-dom';
 
 const Cart = ({ handleSubmit }) => {
     const { showCart, cartItems } = useContext(CartContext);
+    const navigate = useNavigate();
+    
     return (
         <>
             {showCart &&
                 <div className="Cart">
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={(e) => {
+                        handleSubmit(e)
+                        navigate('/checkout')
+                    }
+                    }>
                         <button className='Cart-Button'>
                             Proceed To Checkout
                         </button>

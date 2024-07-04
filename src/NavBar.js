@@ -3,11 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import './NavBar.css';
 import { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 
 
 const NavBar = ({ searchFilter, handleChange, handleSearch, user, setShowCart, showCart }) => {
   const [navStyle, setNavStyle] = useState({ width: '100vw' })
+  const navigate = useNavigate();
+  const location = useLocation();
   useEffect(() => {
     if (showCart) {
       setNavStyle({ width: '92%' })
@@ -70,7 +72,13 @@ const NavBar = ({ searchFilter, handleChange, handleSearch, user, setShowCart, s
           </Nav>
         </Navbar.Collapse>
         <Form className="Nav-Form d-flex"
-          onSubmit={handleSearch}>
+          onSubmit={(e) => {
+            if (location.pathname != '/') {
+              navigate('/')
+            }
+            handleSearch(e)
+          }
+        }>
           <Form.Control
             type="search"
             placeholder="Search by product name or category"

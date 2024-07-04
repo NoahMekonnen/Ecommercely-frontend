@@ -18,6 +18,7 @@ const SellerOrderListCard = ({ interaction, setSellerOrders, user, handleApprova
             <p>{interaction.name}</p>
             <p>Price: ${newPrice}</p>
             <p>Quantity: {interaction.quantityChosen}</p>
+            <p>Shipping Address: {interaction.address}</p>
             <button id={interaction.id}
             onClick={async (e) => {
                 await handleApproval(e)

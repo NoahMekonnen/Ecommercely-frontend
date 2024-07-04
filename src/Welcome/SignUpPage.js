@@ -1,15 +1,22 @@
 import { Navigate } from "react-router-dom";
 import './SignUpPage.css'
-
+import { useNavigate } from "react-router-dom";
 
 const SignUpPage = ({ data, handleChange, handleSubmit, user, errorMessage }) => {
 
     const { username, password, isSeller } = data;
-
+    const navigate = useNavigate();
+    console.log("in signup page")
     return (
         <div className="SignUpPage">
             <div className="SignUpPage-Form-Container">
-                <form onSubmit={handleSubmit}
+                <form onSubmit={(e) =>{
+                    handleSubmit(e)
+                    if(user.username){
+                        navigate('/');
+                    }
+                }
+            }
                     className="SignUpPage-Form"
                     id="form">
                     <label htmlFor="username">

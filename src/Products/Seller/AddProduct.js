@@ -1,13 +1,21 @@
+import { useEffect } from 'react';
 import './AddProduct.css';
-
+import { useNavigate } from 'react-router-dom';
 
 const AddProduct = ({ productFormData, handleChange, handleSubmit, errorMessages }) => {
     const { name, description, price, imageUrl, quantity, category, expectedShippingTime } = productFormData
-
+    const navigate = useNavigate();
+    
     return (
         <div className="AddProduct">
             <div className="AddProduct-Form-Container">
-                <form onSubmit={handleSubmit}
+                <form onSubmit={(e) => {
+                    handleSubmit(e)
+                    if(Object.keys(errorMessages).length === 0){
+                        navigate('/dashboard');
+                    }
+                }
+            }
                     className="AddProduct-Form">
                     <label htmlFor="name">
                         <b className='AddProduct-label'>
