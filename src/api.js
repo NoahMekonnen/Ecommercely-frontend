@@ -15,6 +15,7 @@ class EcommerceApi {
 
     static async request(endpoint, data = {}, method = 'get') {
         const url = `${BASE_URL}/${endpoint}`;
+        console.log(url)
         const headers = { Authorization: `Bearer ${EcommerceApi.token}` };
         const params = (method === "get")
             ? data
@@ -45,7 +46,6 @@ class EcommerceApi {
 
     static async register(data) {
         this.setToken();
-        console.log('register')
         const res = await this.request('auth/register', data, 'post');
         localStorage.setItem('token', res.token);
         return res.token;

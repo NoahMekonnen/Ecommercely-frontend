@@ -6,15 +6,14 @@ const SignUpPage = ({ data, handleChange, handleSubmit, user, errorMessage }) =>
 
     const { username, password, isSeller } = data;
     const navigate = useNavigate();
-    console.log("in signup page")
     return (
         <div className="SignUpPage">
             <div className="SignUpPage-Form-Container">
                 <form onSubmit={(e) =>{
                     handleSubmit(e)
-                    if(user.username){
-                        navigate('/');
-                    }
+                    // if(user.username){
+                    //     navigate('/');
+                    // }
                 }
             }
                     className="SignUpPage-Form"

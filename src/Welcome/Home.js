@@ -2,6 +2,7 @@ import ProductCard from "../Products/ProductCard";
 import './Home.css';
 
 const Home = ({ products, numOfProducts, setNumOfProducts, user }) => {
+   
     return (
         <div className="Home">
             {products.slice(0, numOfProducts).length > 0

@@ -15,6 +15,8 @@ const QuantityAdjuster = ({ id }) => {
                 -
             </button>
             <input className="QuantityAdjuster-Input"
+                name='amount'
+                id='amount'
                 value={quantity}
                 onChange={handleQuantityAdjusterChange} />
             <button onClick={increase}

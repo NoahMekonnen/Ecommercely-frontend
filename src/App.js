@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate, useNavigate } from 'react-router-dom';
 import './App.css';
 import NavBar from './NavBar';
 
@@ -30,7 +30,7 @@ import ProfilePage from './ProfilePage';
 
 
 function App() {
-  
+  const navigate = useNavigate();
   const INITIAL_LOGIN_FORM_DATA = {
     username: '',
     password: ''
@@ -115,10 +115,11 @@ function App() {
     const body = document.querySelector('body');
     body.style.backgroundColor = '#116466';
     body.style.width = '100%'
-
+    
     // grab all relevant data about a user from backend and store it in state
     if (user.isSeller && localStorage.getItem('token')) {
       const getMyProducts = async () => {
+        
         setMyProducts(await EcommerceApi.getSellerItems(user.username))
       }
       getMyProducts();
@@ -133,7 +134,7 @@ function App() {
       }
       getApprovedInteractions();
     }
-
+    
     const getAllProducts = async () => {
       const allProducts = await EcommerceApi.getProducts()
       setProducts(() => allProducts.filter(product => product.quantity > 0));
@@ -142,12 +143,14 @@ function App() {
 
     if (localStorage.getItem('token')) {
       const getCustomerTransactions = async () => {
+        
         setMyTransactions(await EcommerceApi.getPastCustomerTransactions(user.username));
       }
       getCustomerTransactions();
     }
+    
   }, [user]);
-
+  
   // store seller's products in localStorage
   useEffect(() => {
     localStorage.setItem('products', JSON.stringify(myProducts))
@@ -181,16 +184,16 @@ function App() {
 
   const handleAddToCart = async (e) => {
     e.preventDefault();
-
+    console.log('in add')
     if (user.username) {
       const product = await EcommerceApi.getProduct(e.target.id);
       if (product.sellerId == user.id) return;
-
       const inCart = cartItems.find(item => item.id == e.target.id);
 
       // if item not in cart add item to cart
       if (!inCart) {
         const newItem = products.find(product => product.id == e.target.id);
+        console.log(newItem,'newItem')
         setCartItems(() =>
           [...cartItems, {
             ...newItem,
@@ -198,6 +201,7 @@ function App() {
           }
           ]);
       }
+      console.log(cartItems,"cartItems")
     }
   }
 
@@ -281,11 +285,11 @@ function App() {
     e.preventDefault()
     try {
       const token = await EcommerceApi.register(signUpFormData);
-      console.log(token,"token")
+  
       if (token) {
-        console.log("in signup submit")
         setUser(() => decodeToken(token));
         setSignUpFormData(INITIAL_SIGNUP_FORM_DATA);
+        navigate('/')
       }
     } catch (err) {
       // store error msg in state so that appropiate message and display may be shown
