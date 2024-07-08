@@ -1,6 +1,6 @@
 # Ecommercely(Ecommercely-frontend)
 
-This is a basic ecommerce site which allows users to buy and/or sell items and see their past transactions.
+This is a basic ecommerce site
 #### Live At: 
 
 https://ecommercely-frontend.onrender.com/
@@ -20,20 +20,20 @@ his transactions with customers and approve any incoming orders in his dashboard
 #### For a Customer:
 
 1. A customer registers as a customer or logs into a customer account made previously.
-2. He then filters products based on category/product name and adds items to his cart using the add to cart button.
+2. He then filters products based on a category or a product name and adds items to his cart.
 3. He then clicks on one of the products to view more information on the product and upon review adds the item to the cart.
 4. He then clicks on the cart button in the Navbar and clicks the proceed to checkout button.
 5. He then is directed to the checkout page where he types in an address and clicks the proceed to pay button.
 6. He is then taken to the stripe checkout page where his payment information is verified.
-7. Upon success He will be taken to a success page.
+7. Upon completion he will return to the Ecommcercely website.
 
 #### For a Seller:
 
 1. A seller registers as a seller or logs into a seller account made previously.
 2. He then clicks the make product link in the Navbar and inputs some information for a product he wants to post.
 3. Upon completion he is redirected to his dashboard.
-4. If a customer buys a product he can approve the product and the transaction will have be officially completed.
-5. The seller can also view all his posted products through the dashboard page.
+4. If a customer buys a product he can approve the product by navigating to the page of customer orders and the transaction will be officially completed.
+5. The seller can also view all his posted products and sales revenue through the dashboard page if he desires.
 
 
 ### API ENDPOINT
