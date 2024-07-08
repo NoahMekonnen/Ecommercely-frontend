@@ -3,7 +3,7 @@ import './CustomerOrderList.css';
 import {v4 as uuid} from 'uuid';
 
 const CustomerOrderList = ({ interactions }) => {
-
+    
     return (
         <div className="CustomerOrderList">
             {interactions.length != 0

@@ -15,7 +15,6 @@ class EcommerceApi {
 
     static async request(endpoint, data = {}, method = 'get') {
         const url = `${BASE_URL}/${endpoint}`;
-        console.log(url)
         const headers = { Authorization: `Bearer ${EcommerceApi.token}` };
         const params = (method === "get")
             ? data

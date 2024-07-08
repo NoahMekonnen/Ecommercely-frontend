@@ -135,6 +135,7 @@ const AddProduct = ({ productFormData, handleChange, handleSubmit, errorMessages
                     {!errorMessages.expectedShippingTime &&
                         <input type="number"
                             name="expectedShippingTime"
+                            id="expectedShippingTime"
                             value={expectedShippingTime}
                             onChange={handleChange}
                             className="ProfilePage-Input form-control" />}

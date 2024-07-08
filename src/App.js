@@ -142,8 +142,7 @@ function App() {
     getAllProducts();
 
     if (localStorage.getItem('token')) {
-      const getCustomerTransactions = async () => {
-        
+      const getCustomerTransactions = async () => {    
         setMyTransactions(await EcommerceApi.getPastCustomerTransactions(user.username));
       }
       getCustomerTransactions();
@@ -184,7 +183,6 @@ function App() {
 
   const handleAddToCart = async (e) => {
     e.preventDefault();
-    console.log('in add')
     if (user.username) {
       const product = await EcommerceApi.getProduct(e.target.id);
       if (product.sellerId == user.id) return;
@@ -193,7 +191,6 @@ function App() {
       // if item not in cart add item to cart
       if (!inCart) {
         const newItem = products.find(product => product.id == e.target.id);
-        console.log(newItem,'newItem')
         setCartItems(() =>
           [...cartItems, {
             ...newItem,
@@ -201,7 +198,6 @@ function App() {
           }
           ]);
       }
-      console.log(cartItems,"cartItems")
     }
   }
 
@@ -458,7 +454,6 @@ function App() {
   const makePayment = async (e) => {
     e.preventDefault();
     if (cartItems.length === 0) return;
-
     await EcommerceApi.buyCart(user.id, cartItems, shippingAddress);
 
     localStorage.setItem('cartItems', JSON.stringify([]));
