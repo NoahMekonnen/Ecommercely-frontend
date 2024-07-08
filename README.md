@@ -49,7 +49,7 @@ https://ecommerce-store-backend-7m44.onrender.com
 ### Important Notes
 
 * Database is populated with fake user and product data from mockaroo.com
-* Payments are verified through stripe api(See backend for more detail: https://github.com/NoahMekonnen/Ecommercely-backend)
+* Payments are verified through stripe api(See backend repo for more detail: https://github.com/NoahMekonnen/Ecommercely-backend)
 
 ## Available Scripts
 
