@@ -3,7 +3,7 @@
 This is a basic ecommerce site which allows users to buy and/or sell items and see their past transactions.
 #### Live At: 
 
-https://ecommerce-store-frontend-ced2.onrender.com/
+https://ecommercely-frontend.onrender.com/
 
 ![Ecommerce Picture](https://github.com/NoahMekonnen/Ecommercely-frontend/blob/main/HomePage.png?raw=true)
 
