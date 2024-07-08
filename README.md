@@ -1,9 +1,11 @@
-# Ecommercely-frontend(Note that the application is called Ecommercely)
+# Ecommercely(Ecommercely-frontend)
 
 This is a basic ecommerce site which allows users to buy and/or sell items and see their past transactions.
-Live at: https://ecommerce-store-frontend-ced2.onrender.com/
+##### Live: 
 
-![Ecommerce Picture](c:\Users\noahm\OneDrive\Pictures\Screenshots\Screenshot 2024-06-28 152819.png)
+https://ecommerce-store-frontend-ced2.onrender.com/
+
+![Ecommerce Picture](https://github.com/NoahMekonnen/frontend/blob/main/HomePage.png?raw=true)
 
 ### App features include:
 
@@ -40,6 +42,7 @@ https://ecommerce-store-backend-7m44.onrender.com
 
 ### Tech Stack
 * React.js
+* CSS
 * Bootstrap
 * (Node.js for backend)
 
@@ -56,9 +59,9 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
 ### `npm test`
+
+Test are currently not working as intended
 
 ### `npm run build`
