@@ -2,15 +2,13 @@ import { render, screen } from '@testing-library/react';
 import ProfilePage from './ProfilePage';
 
 test('renders', () =>{
-    render(<ProfilePage profileFormData={{}}
-         handleChange={() =>{
+    const {getByText} = render(<ProfilePage profileFormData={{}} 
+        handleChange={() =>{}} 
+        handleSubmit={() =>{}} 
+        errorMessages={{}} 
+        handleDelete={() =>{}}
+        user={{}} />)
 
-         }}
-         handleSubmit={() =>{
-
-         }}
-         errorMessages={{}} 
-         handleDelete={() =>{
-         }}
-         user={{}} />)
+    expect(getByText('Username')).toBeInTheDocument()
+    expect(getByText('Age')).toBeInTheDocument()
 })

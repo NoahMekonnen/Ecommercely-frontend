@@ -4,6 +4,8 @@ import SellerOrderList from "./SellerOrderList";
 
 describe("SellerOrderList", () =>{
     test("renders", () =>{
-        render(<SellerOrderList interactions={[]}/>)
+        const {getByText} = render(<SellerOrderList interactions={[]}/>)
+
+        expect(getByText('No Pending Orders...')).toBeInTheDocument()
     })
 })

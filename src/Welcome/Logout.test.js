@@ -4,8 +4,6 @@ import Logout from "./Logout";
 
 describe("Logout", () =>{
     test("renders", () =>{
-        render(<Logout handleLogout={() =>{
-            
-        }}/>)
+        render(<Logout handleLogout={() =>{}}/>)
     })
 })

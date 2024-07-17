@@ -4,8 +4,9 @@ import CartContext from "./CartContext";
 
 describe("CartIcon", () =>{
     test("renders", () =>{
-        render(<CartContext.Provider value={{cartItems:[]}}>
-            <CartIcon/>\
+        const {getByText} = render(<CartContext.Provider value={{cartItems:[]}}>
+            <CartIcon/>
         </CartContext.Provider>)
+        expect(getByText('0')).toBeInTheDocument()
     })
 })

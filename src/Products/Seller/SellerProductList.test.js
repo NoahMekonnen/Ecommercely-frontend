@@ -4,6 +4,7 @@ import SellerProductList from "./SellerProductList";
 
 describe("SellerProductList", () =>{
     test("renders", () =>{
-        render(<SellerProductList products={[]}/>)
+        const {getByText} = render(<SellerProductList products={[]}/>)
+        expect(getByText('No Available Products...')).toBeInTheDocument
     })
 })

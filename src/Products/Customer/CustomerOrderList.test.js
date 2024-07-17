@@ -4,6 +4,7 @@ import CustomerOrderList from "./CustomerOrderList";
 
 describe("CustomerOrderList", () =>{
     test("renders", () =>{
-        render(<CustomerOrderList interactions={[]}/>)
+        const {getByText} = render(<CustomerOrderList interactions={[]}/>)
+        expect(getByText('No transactions yet...')).toBeInTheDocument()
     })
 })

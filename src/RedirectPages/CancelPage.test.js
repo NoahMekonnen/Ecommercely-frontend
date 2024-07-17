@@ -4,8 +4,8 @@ import CancelPage from "./CancelPage";
 
 describe("CancelPage", () =>{
     test("renders", () =>{
-        render(<CancelPage setShowRedirectPage={() =>{
-            
-        }}/>)
+        const {getByText} = render(<CancelPage setShowRedirectPage={() =>{}}/>)
+
+        expect(getByText('Your Transaction was canceled')).toBeInTheDocument()
     })
 })

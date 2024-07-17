@@ -5,9 +5,11 @@ import { BrowserRouter } from "react-router-dom";
 
 describe("SignUpPage", () =>{
     test("renders", () =>{
-        render(<BrowserRouter>
+        const {getByText} = render(<BrowserRouter>
         <SignUpPage data={{}}/>
         </BrowserRouter>
         )
+
+        expect(getByText('SignUp')).toBeInTheDocument()
     })
 })

@@ -4,8 +4,8 @@ import SuccessPage from "./SuccessPage";
 
 describe("SuccessPage", () =>{
     test("renders", () =>{
-        render(<SuccessPage setShowRedirectPage={() =>{
-            
-        }}/>)
+        const {getByText} = render(<SuccessPage setShowRedirectPage={() =>{}}/>)
+
+        expect(getByText('Your Transaction was successful')).toBeInTheDocument()
     })
 })

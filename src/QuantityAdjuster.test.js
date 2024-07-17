@@ -5,15 +5,16 @@ import CartContext from './Carts/CartContext';
 describe("QuantityAdjuster", () => {
 
     test("renders", () => {
-        render(<CartContext.Provider value={{handleQuantityAdjusterChange:() =>{
-
-        }, decrease:() =>{
-
-        } ,
-         increase:() =>{
-
-         }, cartItems:[]}}>
+        const {getByText} = render(<CartContext.Provider value={{
+            handleQuantityAdjusterChange: () => { },
+            decrease: () => { },
+            increase: () => { },
+            cartItems: []
+        }}>
             <QuantityAdjuster id={5} />
         </CartContext.Provider>)
+
+        expect(getByText('+')).toBeInTheDocument()
+        expect(getByText('-')).toBeInTheDocument()
     })
 })

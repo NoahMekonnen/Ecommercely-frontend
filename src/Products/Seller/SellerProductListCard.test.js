@@ -4,6 +4,7 @@ import SellerProductListCard from "./SellerProductListCard";
 
 describe("SellerProductListCard", () =>{
     test("renders", () =>{
-        render(<SellerProductListCard product={{price:1}}/>)
+        const {getByText} = render(<SellerProductListCard product={{price:1}}/>)
+        expect(getByText('Quantity Available:')).toBeInTheDocument()
     })
 })
