@@ -2,13 +2,13 @@
     position: relative;
     width: 260px;
     height: 300px;
-    background-color: #964734;
-    color: #D1E8E2;
+    background-color: #dcdde1;
     text-decoration: none;
     border-radius: 10px;
     overflow: hidden;
     padding: 10px;
     text-align: center;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .SellerProductListCard-Img-Container{

@@ -2,6 +2,7 @@
     position: relative;
     height: 10vh;
     max-width: 100%;
+    background-color: #718093;
 }
 
 .Nav-Form {
@@ -10,7 +11,6 @@
 
 .Nav .Nav-SearchBar {
     width: 23vw;
-
 }
 
 .Nav .Nav-CartIcon-Button {
@@ -21,7 +21,7 @@
 }
 
 .Nav .Nav-Add:hover {
-    color: #D9B08C;
+    color: #c23616;
 }
 
 @media(max-width: 1400px) {
@@ -76,5 +76,5 @@
 }
 
 .Nav .Nav-Link:hover {
-    background-color: gray;
+    background-color: #7f8fa6;
 }

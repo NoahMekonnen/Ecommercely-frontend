@@ -10,7 +10,7 @@
     border-radius: 6px;
     position: relative;
     bottom: -80px;
-    background-color: #024950;
+    background-color: #7f8fa6;
     height: 250px;
     width: 450px;
 }
@@ -25,5 +25,5 @@
 }
 
 .LoginPage-label{
-    color: #0FA4AF;
+    color: #192a56;
 }

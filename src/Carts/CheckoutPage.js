@@ -3,9 +3,17 @@ import CartContext from "./CartContext";
 import { useContext } from "react";
 import './CheckoutPage.css';
 import {v4 as uuid} from 'uuid';
+import { Loader } from "@googlemaps/js-api-loader";
+import axios from "axios";
+
 
 const CheckoutPage = ({ handleChange, address }) => {
     const {makePayment, cartItems} = useContext(CartContext)
+    const getAddress = async () => {
+        const res = await axios.get('https://www.google.com/maps/search/?api=1&query=a')
+        console.log(res)
+    }
+    // getAddress()
     return (
         <div className="CheckoutPage">
             <div className="CheckoutPage-Content-Container">

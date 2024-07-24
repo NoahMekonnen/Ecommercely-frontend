@@ -10,9 +10,8 @@
     justify-content: flex-start;
     height: 500px;
     width: 100%;
-    background-color: #0FA4AF;
+    background-color: #dcdde1;
     border: 1px solid white;
-    border-radius: 12px;
 }
 
 .ProductDetail-Image{
@@ -28,7 +27,7 @@
     display: inline;
     max-width: 800px;
     width: 100%;
-    background-color: #964734;
+    background-color: #dcdde1;
     margin-left: 40px;
     padding: 20px;
 }

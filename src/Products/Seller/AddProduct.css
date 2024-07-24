@@ -10,7 +10,7 @@
     width: 450px;
     height: 530px;
     border-radius: 6px;
-    background-color: #024950;
+    background-color: #7f8fa6;
     position: relative;
     bottom: -80px;
 }
@@ -26,5 +26,5 @@
 }
 
 .AddProduct-label{
-    color: #0FA4AF;
+    color: #192a56;
 }

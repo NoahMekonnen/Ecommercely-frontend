@@ -1,6 +1,6 @@
 .CheckoutCartItemCard{
     padding: 5px;
-    border: 1px black solid;
+    border-bottom: 1px black solid;
     height: 120px;
     width: 100%;
     display: flex;

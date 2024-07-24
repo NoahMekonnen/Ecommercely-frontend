@@ -19,7 +19,7 @@ const NavBar = ({ searchFilter, handleChange, handleSearch, user, setShowCart, s
   }, [showCart])
 
   return (
-    <Navbar expand="lg" className="Nav bg-body-tertiary" data-bs-theme="dark"
+    <Navbar expand="lg" className="Nav" data-bs-theme="dark"
       style={navStyle}>
       <Container fluid>
         <Navbar.Brand href="/">
@@ -60,7 +60,7 @@ const NavBar = ({ searchFilter, handleChange, handleSearch, user, setShowCart, s
                 </Nav.Link>
                 <Nav.Link as={NavLink} to='/profile'
                   className='Nav-Profile Nav-Link'>
-                  Account Information
+                  Account Info
                 </Nav.Link>
                 <Nav.Link as={NavLink} to='/customer/orders'
                   className='Nav-Link'>
