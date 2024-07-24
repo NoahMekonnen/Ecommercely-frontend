@@ -24,9 +24,12 @@ const ProductDetail = ({ user, handleClick, cartItems }) => {
             setProduct(() => tempProduct)
         }
         getProduct()
-        setIsLoading(() => true)
     }, [])
 
+    useEffect(() =>{
+        setIsLoading(() => true)
+    },[product])
+    
     useEffect(() => {
         if (product.averageRating) {
             for (let i = 0; i < product.averageRating; i++) {
