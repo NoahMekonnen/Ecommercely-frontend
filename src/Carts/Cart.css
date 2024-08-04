@@ -4,7 +4,7 @@
     height: 110vh;
     right: 0px;
     top: 0px;
-    background-color: #192a56;
+    background-color: #E8D1D7;
     z-index: 2;
     overflow-y: auto;
 }
@@ -23,7 +23,7 @@
 }
 
 .Cart-Button{
-    background-color: #4cd137;
+    background-color: #40E0D0;
     color: #AFDDE5;
     height: 10vh;
     border: 0px;
