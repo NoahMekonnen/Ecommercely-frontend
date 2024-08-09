@@ -2,7 +2,7 @@
     position: relative;
     height: 10vh;
     max-width: 100%;
-    background-color: #718093;
+    background-color: #023047;
 }
 
 .Nav-Form {
@@ -46,7 +46,7 @@
 
 @media(max-width:991px) {
     .Nav {
-        height: 38vh;
+        height: 42vh;
     }
 
     .Nav .Nav-CartIcon-Button {

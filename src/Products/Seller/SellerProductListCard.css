@@ -2,11 +2,12 @@
     position: relative;
     width: 260px;
     height: 300px;
-    background-color: #dcdde1;
+    background-color: #023047;
     text-decoration: none;
     border-radius: 10px;
     overflow: hidden;
     padding: 10px;
+    color: white;
     text-align: center;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }

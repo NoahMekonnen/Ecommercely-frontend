@@ -22,15 +22,15 @@ const NavBar = ({ searchFilter, handleChange, handleSearch, user, setShowCart, s
     <Navbar expand="lg" className="Nav" data-bs-theme="dark"
       style={navStyle}>
       <Container fluid>
-        <Navbar.Brand href="/">
-          {user.username ? `Welcome ${user.username}` : 'Ecommercely'}
-        </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
             className="me-auto my-2 my-lg-0"
             navbarScroll
           >
+            <Navbar.Brand href="/">
+          {user.username ? `Welcome ${user.username}` : 'Ecommercely'}
+        </Navbar.Brand>
             {!user.username &&
               <>
                 <Nav.Link as={NavLink} to="/login"

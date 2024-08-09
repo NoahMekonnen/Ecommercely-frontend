@@ -4,9 +4,13 @@
     height: 110vh;
     right: 0px;
     top: 0px;
-    background-color: #E8D1D7;
+    background-color: #FB8500;
     z-index: 2;
     overflow-y: auto;
+}
+
+.Cart-Container{
+    padding: 2px;
 }
 
 @media (max-width: 900px){
@@ -23,8 +27,8 @@
 }
 
 .Cart-Button{
-    background-color: #40E0D0;
-    color: #000080;
+    background-color: #219EBC;
+    color: #ecf0f1;
     height: 10vh;
     border: 0px;
 }

@@ -38,7 +38,7 @@ const ProductCard = ({ product, user }) => {
             </p>
             <div className='ProductCard-Stars'>{starsArray.map((star, i) => {
                 if (star == 'full') {
-                    return <FontAwesomeIcon icon={faStar} style={{ color: '#2C3531' }} key={i} />
+                    return <FontAwesomeIcon icon={faStar} className='star' key={i} />
                 } else if (star == 'half') {
                     return <FontAwesomeIcon icon={faStarHalfStroke} />
                 } else {

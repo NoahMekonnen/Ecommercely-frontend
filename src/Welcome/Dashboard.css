@@ -6,9 +6,12 @@
     /* border: 1px solid black; */
     width: 200px;
     height: 200px;
-    background-color: #dcdde1;
+    background-color: #FB8500;
     margin: 3%;
+    color: white;
     text-align: center;
+    padding: 5px;
+    border-radius: 6px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 

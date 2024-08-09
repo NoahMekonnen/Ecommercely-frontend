@@ -10,7 +10,7 @@
     border-radius: 6px;
     height: 300px;
     width: 450px;
-    background-color: #7f8fa6;
+    background-color: #023047;
     position: relative;
     bottom: -80px;
 }
@@ -25,5 +25,5 @@
 }
 
 .SignUpPage-label{
-    color: #192a56;
+    color: #219EBC;
 }

@@ -1,8 +1,11 @@
 .CartItemCard{
     position: relative;
     width: 100%;
-    /* border-top: 1px solid black; */
-    border-bottom: 1px solid black;
+    margin-top: 2px;
+    padding: 6px;
+    border-radius: 6px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #2D3142;
 }
 
 .CartItemCard-Img-Container{
@@ -13,7 +16,7 @@
     position: relative;
     left: 15px;
     height: 32px;
-    border-radius: 0px;
+    border-radius: 4px;
     top: 8px;
 }
 

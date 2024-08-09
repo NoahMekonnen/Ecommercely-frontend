@@ -8,7 +8,7 @@
     align-items: center;
     width: 450px;
     height: 360px;
-    background-color: #7f8fa6;
+    background-color: #023047;
     border-radius: 6px;
     position: relative;
     bottom: -80px;
@@ -25,7 +25,7 @@
 }
 
 .ProfilePage-label{
-    color: #192a56;
+    color: #219EBC;
 }
 
 .ProfilePage-Form-Delete{

@@ -2,8 +2,8 @@
     position: relative;
     width: 260px;
     height: 410px;
-    background-color: #dcdde1;
-    color: black;
+    background-color: #023047;
+    color: white;
     text-decoration: none;
     border-radius: 10px;
     overflow: hidden;
@@ -73,6 +73,6 @@ img{
     padding: 2px;
 }
 
-.ProductCard .ProductCard-Stars{
-    color: #D1E8E2;
+.ProductCard .ProductCard-Stars .star{
+    color: #FFB703;
 }
