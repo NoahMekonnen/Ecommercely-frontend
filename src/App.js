@@ -28,6 +28,9 @@ import { EcommerceApi } from './api';
 import { decodeToken } from "react-jwt";
 import ProfilePage from './ProfilePage';
 
+import SlideIn from './SlideIn';
+import NavSlider from './NavSlider';
+
 
 function App() {
   const navigate = useNavigate();
@@ -113,13 +116,13 @@ function App() {
   useEffect(() => {
     // set properties for body
     const body = document.querySelector('body');
-    body.style.backgroundColor = '#8ECAE6';
+    // body.style.backgroundColor = '#8ECAE6';
     body.style.width = '100%'
-    
+
     // grab all relevant data about a user from backend and store it in state
     if (user.isSeller && localStorage.getItem('token')) {
       const getMyProducts = async () => {
-        
+
         setMyProducts(await EcommerceApi.getSellerItems(user.username))
       }
       getMyProducts();
@@ -134,7 +137,7 @@ function App() {
       }
       getApprovedInteractions();
     }
-    
+
     const getAllProducts = async () => {
       const allProducts = await EcommerceApi.getProducts()
       setProducts(() => allProducts.filter(product => product.quantity > 0));
@@ -142,14 +145,14 @@ function App() {
     getAllProducts();
 
     if (localStorage.getItem('token')) {
-      const getCustomerTransactions = async () => {    
+      const getCustomerTransactions = async () => {
         setMyTransactions(await EcommerceApi.getPastCustomerTransactions(user.username));
       }
       getCustomerTransactions();
     }
-    
+
   }, [user]);
-  
+
   // store seller's products in localStorage
   useEffect(() => {
     localStorage.setItem('products', JSON.stringify(myProducts))
@@ -281,7 +284,7 @@ function App() {
     e.preventDefault()
     try {
       const token = await EcommerceApi.register(signUpFormData);
-  
+
       if (token) {
         setUser(() => decodeToken(token));
         setSignUpFormData(INITIAL_SIGNUP_FORM_DATA);
@@ -535,7 +538,7 @@ function App() {
 
   const handleApproval = async (e) => {
     e.preventDefault();
-    
+
     await EcommerceApi.sellerApproves(e.target.id);
   }
 
@@ -553,16 +556,20 @@ function App() {
           handleRemoveFromCart
         }}>
         <ProductContext.Provider value={{ handleAddToCart }}>
-          <NavBar searchFilter={searchFilter}
-            handleChange={handleSearchChange}
-            handleSearch={handleSearch}
-            setShowCart={setShowCart}
-            user={user}
-            showCart={showCart}
-          />
-          <Cart cartItems={cartItems}
-            handleSubmit={handleProceedToCheckout}
-          />
+          <NavSlider showCart={showCart}>
+            <NavBar searchFilter={searchFilter}
+              handleChange={handleSearchChange}
+              handleSearch={handleSearch}
+              setShowCart={setShowCart}
+              user={user}
+              showCart={showCart}
+            />
+          </NavSlider>
+          <SlideIn showCart={showCart}>
+            <Cart cartItems={cartItems}
+              handleSubmit={handleProceedToCheckout}
+            />
+          </SlideIn>
           <Routes>
             <Route path='/login'
               element={<LoginPage
@@ -667,9 +674,9 @@ function App() {
                   element={<SellerOrderList
                     interactions={sellerOrders}
                     setSellerOrders={setSellerOrders}
-                    user={user} 
+                    user={user}
                     handleApproval={handleApproval}
-                    />}
+                  />}
                 />
                 <Route path='/seller/products'
                   element={<SellerProductList

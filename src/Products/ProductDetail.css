@@ -42,9 +42,14 @@
     top: 12px;
     right: 20px;
     border-radius: 6px;
-    background-color: #3498db;
     height: 34px;
-    border: 0px;
+    border: 1px solid blue;
+    color: blue;
+}
+
+.ProductDetail-Button:hover{
+    background-color: #2980b9;
+    color: white;
 }
 
 .ProductDetail-QuantityAdjuster{

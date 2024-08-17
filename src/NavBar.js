@@ -6,21 +6,13 @@ import { useEffect, useState } from 'react';
 import { NavLink, useNavigate, useLocation } from 'react-router-dom';
 
 
-const NavBar = ({ searchFilter, handleChange, handleSearch, user, setShowCart, showCart }) => {
+const NavBar = ({ searchFilter, handleChange, handleSearch, user, setShowCart }) => {
   const [navStyle, setNavStyle] = useState({ width: '100vw' })
   const navigate = useNavigate();
   const location = useLocation();
-  useEffect(() => {
-    if (showCart) {
-      setNavStyle({ width: '92%' })
-    } else {
-      setNavStyle({ width: '100%' })
-    }
-  }, [showCart])
 
   return (
-    <Navbar expand="lg" className="Nav" data-bs-theme="dark"
-      style={navStyle}>
+    <Navbar expand="lg" className="Nav" data-bs-theme="dark">
       <Container fluid>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">

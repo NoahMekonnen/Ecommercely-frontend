@@ -27,12 +27,13 @@ const ProductCard = ({ product, user }) => {
     }, [])
 
     return (
-        <Link to={`/products/${product.id}`}
-            className="ProductCard">
+        <div className="ProductCard">
+        <Link to={`/products/${product.id}`}>
             <div className='ProductCard-Img-Container ProductCard-Child'>
                 <img src={product.imageUrl}
                     className="ProductCard-Img ProductCard-Child" />
             </div>
+            </Link>
             <p>
                 {product.name}
             </p>
@@ -78,7 +79,7 @@ const ProductCard = ({ product, user }) => {
                     onClick={handleAddToCart}>
                     Add to cart
                 </button>}
-        </Link>
+        </div>
     )
 }
 

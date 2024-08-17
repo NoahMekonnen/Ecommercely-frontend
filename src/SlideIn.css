@@ -1,0 +1,12 @@
+.SlideIn{
+    margin-right: -150px;
+    position: fixed;
+    width: 150px;
+    height: 110vh;
+    right: 0px;
+    top: 0px;
+    z-index: 2;
+    overflow-y: auto;
+    transition: 5s;
+    transition: margin-right 2s;
+}

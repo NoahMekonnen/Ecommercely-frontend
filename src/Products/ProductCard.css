@@ -12,10 +12,6 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.ProductCard:hover{
-    background-color: hsl(214, 14%, 70%);
-}
-
 .ProductCard-Img-Container{
     display: flex;
     justify-content: center;
@@ -32,19 +28,21 @@
 }
 
 .ProductCard-CartButton{
-    background-color: #3498db;
+    /* background-color: #3498db; */
+    background-color: white;
     position: absolute;
     bottom: 40px;
     right: 20%;
     height: 34px;
     width: 60%;
     border-radius: 6px;
-    border: 0px;
-    color: #D1E8E2;
+    border: 1px solid blue;
+    color: blue;
 }
 
 .ProductCard-CartButton:hover{
     background-color: #2980b9;
+    color: white;
 }
 
 a {

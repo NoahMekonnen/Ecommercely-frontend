@@ -50,6 +50,7 @@ https://ecommerce-store-backend-7m44.onrender.com
 
 * Database is populated with fake user and product data from mockaroo.com
 * Payments are verified through stripe api(See backend repo for more detail: https://github.com/NoahMekonnen/Ecommercely-backend)
+* If you want to run it locally you must go into the backend/routes/carts.js file and change the success and cancel url in the 
 
 ## Available Scripts
 
