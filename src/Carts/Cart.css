@@ -4,6 +4,10 @@
 
 .Cart-Container{
     padding: 2px;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    height: 90vh;
+    background-color: white;
 }
 
 @media (max-width: 900px){

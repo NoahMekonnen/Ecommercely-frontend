@@ -4,7 +4,8 @@
     height: 120px;
     width: 100%;
     display: flex;
-    color: #D1E8E2;
+    /* color: #D1E8E2; */
+    color: blue;
 }
 
 .CheckoutCartItemCard-Img{

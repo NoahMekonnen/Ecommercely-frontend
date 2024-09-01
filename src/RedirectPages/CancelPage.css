@@ -1,4 +1,16 @@
-.CancelPage{
+.CancelPage-Display{
+    margin: 0 auto;
+    width: 800px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid red;
+    background-color: #ee8160;
+    position: relative;
+    top: 30px;
+    text-align: center;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    box-sizing: content-box;
 }

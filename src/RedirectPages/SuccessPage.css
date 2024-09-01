@@ -1,4 +1,15 @@
-.SuccessPage{
+.SuccessPage-Display{
+    margin: 0 auto;
+    width: 50%;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid rgb(11, 121, 11);
+    background-color: #2fd063;
+    position: relative;
+    top: 30px;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: white;
+    box-sizing: content-box;
 }

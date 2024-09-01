@@ -15,7 +15,7 @@ const SuccessPage = ({ setShowRedirectPage }) => {
 
     return (
         <div className="SuccessPage">
-            <div className='SuccessPage-Display btn btn-success'>
+            <div className='SuccessPage-Display'>
                 Your Transaction was successful
             </div>
         </div>

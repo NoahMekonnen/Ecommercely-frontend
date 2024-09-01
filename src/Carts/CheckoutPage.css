@@ -3,15 +3,16 @@
     justify-content: center;
     position: relative;
     top: 70px;
-    color: #964734;
 }
 
 
 .CheckoutPage-Content-Container{
     width: 600px;
-    background-color: #E1E0DC;
+    /* background-color:green; */
+    color: blue;
     border-radius: 0px 0px 10px 10px;
     overflow: hidden;
+    border: 1px solid blue;
 }
 
 .CheckoutPage-Form-Container{

@@ -8,7 +8,7 @@ const CancelPage = ({setShowRedirectPage}) =>{
  
     return(
         <div className="CancelPage">
-            <div className='CancelPage-Display btn btn-danger'>
+            <div className='CancelPage-Display'>
                 Your Transaction was canceled
             </div>
         </div>

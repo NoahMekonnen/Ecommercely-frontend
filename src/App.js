@@ -116,7 +116,7 @@ function App() {
   useEffect(() => {
     // set properties for body
     const body = document.querySelector('body');
-    // body.style.backgroundColor = '#8ECAE6';
+    body.style.backgroundColor = 'hsl(270, 0%, 83%)';
     body.style.width = '100%'
 
     // grab all relevant data about a user from backend and store it in state

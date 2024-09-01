@@ -85,7 +85,7 @@ const AddProduct = ({ productFormData, handleChange, handleSubmit, errorMessages
                             Image url
                         </b>
                     </label>
-                    <input type="url"
+                    <input type="file"
                         name="imageUrl"
                         value={imageUrl}
                         onChange={handleChange}
